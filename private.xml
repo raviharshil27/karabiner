@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<root>
+  <devicevendordef>
+    <vendorname>MICROSOFT</vendorname>
+    <vendorid>0x045e</vendorid>
+  </devicevendordef>
+ 
+  <deviceproductdef>
+    <productname>SCULPT_ERGONOMIC</productname>
+    <productid>0x07a5</productid>
+  </deviceproductdef>
+ 
+  <item>
+    <name>Windows Button to Forwards (Command+]) (Microsoft Sculpt Ergonomic Mouse)</name>
+    <identifier>com.microsoft.mouse.sculpt_ergonomic.win_button_to_forwards</identifier>
+    <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+    <autogen>
+      __KeyToKey__
+      KeyCode::COMMAND_R,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_R, Option::NOREPEAT
+    </autogen>
+  </item>
+
+  <item>
+    <name>ScrollWheel Left to Space Left or Right (Microsoft Sculpt Ergonomic Mouse)</name>
+    <identifier>com.microsoft.mouse.sculpt_ergonomic.scrollwheel_to_space</identifier>
+    <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+    <autogen>
+      __ScrollWheelToKey__
+      ScrollWheel::LEFT, ModifierFlag::NONE,
+      KeyCode::CURSOR_RIGHT,  MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+    </autogen>
+    <autogen>
+      __ScrollWheelToKey__
+      ScrollWheel::RIGHT, ModifierFlag::NONE,
+      KeyCode::CURSOR_LEFT,  MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+    </autogen>
+  </item>
+</root>
