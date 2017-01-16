@@ -1,4 +1,5 @@
-**Microsoft Sculpt Ergonomic Mouse - wireless mouse**
+## Microsoft Sculpt Ergonomic Mouse setting for Karabiner for mac
+This repository contains Karabiner custom setting for "Windows Button","Back Button", "Scroll left/right button" support on Microsoft Sculpt Ergonomic Mouse.
 
 **Karabiner setting:**
  
